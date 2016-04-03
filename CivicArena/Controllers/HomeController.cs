@@ -8,6 +8,11 @@ namespace CivicArena.Controllers
 {
     public class HomeController : Controller
     {
+        public ActionResult Bill()
+        {
+            return View();
+        }
+
         public ActionResult Index()
         {
             return View();
