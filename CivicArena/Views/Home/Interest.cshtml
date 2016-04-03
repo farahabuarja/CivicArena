@@ -1,0 +1,131 @@
+﻿@{
+    Layout = "~/Views/Shared/_InterestLayout.cshtml";
+}
+
+@Styles.Render("~/Content/css/bootstrap-slider.css")
+<br/>
+<br/>
+<br />
+<div class="container">
+    <div class="list-group">
+        <a class="list-group-item" id="button1">
+            <div id="icon11" style="display:block">
+                <img src="~/Content/img/solar1.png" />
+            </div>
+            <div id="icon12" style="display:none">
+                <img src="~/Content/img/solar2.png" />
+            </div>
+            <h4 class="list-group-item-heading">Solar Energy</h4>
+            <p id="slider1" style="display:none">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input id="ex1" type="text" /></p>
+        </a>
+    </div>
+    <div class="list-group">
+        <a class="list-group-item" id="button2">
+            <div id="icon21" style="display:block">
+                <img src="~/Content/img/energy1.png" />
+            </div>
+            <div id="icon22" style="display:none">
+                <img src="~/Content/img/energy2.png" />
+            </div>
+            <h4 class="list-group-item-heading">Energy Efficiency</h4>
+            <p id="slider2" style="display:none">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input id="ex2" type="text" /></p>
+        </a>
+    </div>
+    <div class="list-group">
+        <a class="list-group-item" id="button3">
+            <div id="icon31" style="display:block">
+                <img src="~/Content/img/climate1.png" />
+            </div>
+            <div id="icon32" style="display:none">
+                <img src="~/Content/img/climate2.png" />
+            </div>
+            <h4 class="list-group-item-heading">Climate Adaptation / Resiliency</h4>
+            <p id="slider3" style="display:none">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input id="ex3" type="text" /></p>
+        </a>
+    </div>
+    <div class="list-group">
+        <a class="list-group-item" id="button4">
+            <div id="icon41" style="display:block">
+                <img src="~/Content/img/electric1.png" />
+            </div>
+            <div id="icon42" style="display:none">
+                <img src="~/Content/img/electric2.png" />
+            </div>
+            <h4 class="list-group-item-heading">Electric Vehicles</h4>
+            <p id="slider4" style="display:none">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input id="ex4" type="text" /></p>
+        </a>
+    </div>
+    <div class="list-group">
+        <a class="list-group-item" id="button5">
+            <div id="icon51" style="display:block">
+                <img src="~/Content/img/local1.png" />
+            </div>
+            <div id="icon52" style="display:none">
+                <img src="~/Content/img/local2.png" />
+            </div>
+            <h4 class="list-group-item-heading">Local Agriculture</h4>
+            <p id="slider5" style="display:none">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input id="ex5" type="text" /></p>
+        </a>
+    </div>
+    </div>
+    <div class="btn-group" role="group" aria-label="...">
+        <a href="@Url.Action("Article","Home")" class="btn btn-default" data-transition="slide">Skip</a>
+        <a href="@Url.Action("Article","Home")" class="btn btn-default" data-transition="slide">Next</a>
+    </div>
+
+    @Scripts.Render("~/Scripts/js/jquery.js")
+    @Scripts.Render("~/Scripts/js/bootstrap.min.js")
+    @Scripts.Render("~/Scripts/js/modernizr.js")
+    @Scripts.Render("~/Scripts/js/bootstrap-slider.js")
+    <script>
+        $("#button1").click(function () {
+            $("#slider1").toggle();
+            $("#icon11").toggle();
+            $("#icon12").toggle();
+        });
+        $("#button2").click(function () {
+            $("#slider2").toggle();
+            $("#icon21").toggle();
+            $("#icon22").toggle();
+        });
+        $("#button3").click(function () {
+            $("#slider3").toggle();
+            $("#icon31").toggle();
+            $("#icon32").toggle();
+        });
+        $("#button4").click(function () {
+            $("#slider4").toggle();
+            $("#icon41").toggle();
+            $("#icon42").toggle();
+        });
+        $("#button5").click(function () {
+            $("#slider5").toggle();
+            $("#icon51").toggle();
+            $("#icon52").toggle();
+        });
+        $("#ex1").slider({
+            ticks: [0, 50, 100],
+            ticks_labels: ['supporter', 'advocate', 'expert'],
+            ticks_snap_bounds: 50
+        });
+        $("#ex2").slider({
+            ticks: [0, 50, 100],
+            ticks_labels: ['supporter', 'advocate', 'expert'],
+            ticks_snap_bounds: 50
+        });
+        $("#ex3").slider({
+            ticks: [0, 50, 100],
+            ticks_labels: ['supporter', 'advocate', 'expert'],
+            ticks_snap_bounds: 50
+        });
+        $("#ex4").slider({
+            ticks: [0, 50, 100],
+            ticks_labels: ['supporter', 'advocate', 'expert'],
+            ticks_snap_bounds: 50
+        });
+        $("#ex5").slider({
+            ticks: [0, 50, 100],
+            ticks_labels: ['supporter', 'advocate', 'expert'],
+            ticks_snap_bounds: 50
+        });
+    </script>

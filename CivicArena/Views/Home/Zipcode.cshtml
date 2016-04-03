@@ -1,0 +1,20 @@
+﻿@{
+    Layout = "~/Views/Shared/_LoginLayout.cshtml";
+}
+<br />
+<br />
+<img class="logo" src="~/Content/img/logo.png">
+<br />
+
+<form action="#">
+    <p>Just few questions</p>
+    <br />
+    <br />
+    <br />
+    <p>What is your zipcode</p>
+    <input type="text" class="form-control" placeholder="Zipcode" size="5">
+    <br />
+    <div class="btn-group" role="group" aria-label="...">
+        <a href="@Url.Action("Interest","Home")" class="btn btn-default"  data-transition="slide">OK</a>
+    </div>
+</form>
