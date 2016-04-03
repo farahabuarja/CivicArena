@@ -1,4 +1,7 @@
-﻿<style>
+﻿@{
+    Layout = "~/Views/Shared/_InterestLayout.cshtml";
+}
+<style>
     .nav2 {
   margin-top: 50px;
 }
@@ -24,21 +27,32 @@
     <div class="list-group">
         <a class="list-group-item" href="@Url.Action("Action","Home")" data-transition="slide">
             <img src="~/Content/img/solar1.jpg" width="20%" height="20%"/>
-            <h4 class="list-group-item-heading">Local Agriculture</h4>
+            <h4 class="list-group-item-heading">Solar Energy</h4>
+            <p>Major solar incentive runs out in Mass., surprising many</p>
             <p>The Boston Globe</p>
         </a>
     </div>
     <div class="list-group">
         <a class="list-group-item" href="@Url.Action("Action","Home")" data-transition="slide">
             <img src="~/Content/img/solar1.jpg" width="20%" height="20%" />
-            <h4 class="list-group-item-heading">Local Agriculture</h4>
-            <p>The Boston Globe</p>
+            <h4 class="list-group-item-heading">Solar Energy</h4>
+            <p>The state of solar energy in Massachusetts, Medford</p>
+            <p>Medford Newspaper</p>
         </a>
     </div>
     <div class="list-group">
         <a class="list-group-item" href="@Url.Action("Action","Home")" data-transition="slide">
-            <img src="~/Content/img/solar1.jpg" width="20%" height="20%" />
-            <h4 class="list-group-item-heading">Local Agriculture</h4>
+            <img src="~/Content/img/solar2.jpg" width="20%" height="20%" />
+            <h4 class="list-group-item-heading">Energy Efficiency</h4>
+            <p>Senate approves bill on energy efficiency</p>
+            <p>Concord Monitor</p>
+        </a>
+    </div>
+    <div class="list-group">
+        <a class="list-group-item" href="@Url.Action("Action","Home")" data-transition="slide">
+            <img src="~/Content/img/solar2.jpg" width="20%" height="20%" />
+            <h4 class="list-group-item-heading">Energy Efficiency</h4>
+            <p>Boston energy efficiency firm Next Step Living is shutting down</p>
             <p>The Boston Globe</p>
         </a>
     </div>
@@ -50,7 +64,7 @@
                     <td width="25%" align="center">
                         <a class="page-scroll" href="#"><img src="~/Content/img/settings.png" /></a></td>
                     <td width="25%" align="center">
-                        <a class="page-scroll" href="#"><img src="~/Content/img/home.png" /></a></td>
+                        <a class="page-scroll" href="@Url.Action("Article","Home")"><img src="~/Content/img/home.png" /></a></td>
                     <td width="25%" align="center">
                         <a class="page-scroll" href="#"><img src="~/Content/img/profile.png" /></a></td>
                     <td width="25%" align="center">
