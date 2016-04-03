@@ -56,7 +56,7 @@
   border-width: 0 10px 10px 10px;
   width: 0;
   height: 0;
-  border-bottom-color: #0480be;
+  border-bottom-color: #EB581A;
   margin-top: 0;
 }
 .slider.slider-horizontal .slider-tick-label-container {
@@ -101,7 +101,7 @@
   border-width: 10px 0 10px 10px;
   width: 1px;
   height: 1px;
-  border-left-color: #0480be;
+  border-left-color: #114150;
   margin-left: 0;
 }
 .slider.slider-vertical .slider-tick-label-container {
@@ -165,11 +165,11 @@
   border-radius: 4px;
 }
 .slider-selection.tick-slider-selection {
-  background-image: -webkit-linear-gradient(top, #89cdef 0%, #81bfde 100%);
-  background-image: -o-linear-gradient(top, #89cdef 0%, #81bfde 100%);
-  background-image: linear-gradient(to bottom, #89cdef 0%, #81bfde 100%);
+  background-image: -webkit-linear-gradient(top, #EB581A 0%, #FF8235 100%);
+  background-image: -o-linear-gradient(top, #EB581A 0%, #FF8235 100%);
+  background-image: linear-gradient(to bottom, #EB581A 0%, #FF8235  100%);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff89cdef', endColorstr='#ff81bfde', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#EB581A', endColorstr='#FF8235', GradientType=0);
 }
 .slider-track-low,
 .slider-track-high {
@@ -184,12 +184,12 @@
   position: absolute;
   width: 20px;
   height: 20px;
-  background-color: #337ab7;
-  background-image: -webkit-linear-gradient(top, #149bdf 0%, #0480be 100%);
-  background-image: -o-linear-gradient(top, #149bdf 0%, #0480be 100%);
-  background-image: linear-gradient(to bottom, #149bdf 0%, #0480be 100%);
+  background-color: #114150;
+  background-image: -webkit-linear-gradient(top, #114150 0%, #217088 100%);
+  background-image: -o-linear-gradient(top, #114150 0%, #217088 100%);
+  background-image: linear-gradient(to bottom, #114150 0%, #217088 100%);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff149bdf', endColorstr='#ff0480be', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#114150', endColorstr='#217088', GradientType=0);
   filter: none;
   -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
   box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
@@ -244,10 +244,10 @@
   color: #726204;
 }
 .slider-tick.in-selection {
-  background-image: -webkit-linear-gradient(top, #89cdef 0%, #81bfde 100%);
-  background-image: -o-linear-gradient(top, #89cdef 0%, #81bfde 100%);
-  background-image: linear-gradient(to bottom, #89cdef 0%, #81bfde 100%);
+  background-image: -webkit-linear-gradient(top, #EB581A 0%, #FF8235 100%);
+  background-image: -o-linear-gradient(top, #EB581A 0%, #FF8235 100%);
+  background-image: linear-gradient(to bottom, #EB581A 0%, #FF8235 100%);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff89cdef', endColorstr='#ff81bfde', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#EB581A', endColorstr='#FF8235', GradientType=0);
   opacity: 1;
 }
