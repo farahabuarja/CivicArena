@@ -4,38 +4,39 @@
       background-color: #EB581A;
 }
 </style>
+<div id="fb-root"></div>
+<script>
+(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=297276526958905";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 <nav class="navbar navbar-default navbar-fixed-top nav2">
     <div class="container-fluid">
         <table width="100%">
             <tr>
                 <td width="20%" align="center">
-                    <a href="tel:6178031411"><img src="~/Content/img/share.png" /></a>
+                    <div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="link"><img src="~/Content/img/share.png" /></div>
                 </td>
                 <td width="20%" align="center">
                     <a href="mailto:someone@yoursite.com?cc=someoneelse@theirsite.com, another@thatsite.com, me@mysite.com&bcc=lastperson@theirsite.com&subject=Big%20News&body=Body-goes-here"><img src="~/Content/img/email.png" /></a>
                 </td>
                 <td width="20%" align="center">
-                    <a href="http://action.votesolar.org/page/s/don-t-let-the-sun-set-on-massachusetts-solar"><img src="~/Content/img/petition.png" /</a>
+                    <a href="http://action.votesolar.org/page/s/don-t-let-the-sun-set-on-massachusetts-solar" width="200px"><img src="~/Content/img/petition.png" /</a>
                 </td>
                 <td width="20%" align="center">
                     <a href="tel:6178031411"><img src="~/Content/img/call.png" /></a>
                 </td>
                 <td width="20%" align="center">
-                    <a href="http://www.google.com/calendar/event?action=TEMPLATE&text=Example%20Event&dates=20131124T010000Z/20131124T020000Z&details=Event%20Details%20Here&location=123%20Main%20St%2C%20Example%2C%20NY"><img src="~/Content/img/event.png" /></a>
+                    <a href="http://www.google.com/calendar/event?action=TEMPLATE&text=Demonstration%20Solar%20Energy&dates=20131124T010000Z/20131124T020000Z&details=Event%20Details%20Here&location=123%20Main%20St%2C%20Example%2C%20MA"><img src="~/Content/img/event.png" /></a>
                 </td>
             </tr>
         </table>
-        <div class="row">
-            <div class="col-sm-12">
-                <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-                        60%
-                    </div>
-                </div>
-            </div><!-- /.col-lg-6 -->
-        </div>
     </div>
 </nav>
+<br />
 <br />
 <br />
 <br />
